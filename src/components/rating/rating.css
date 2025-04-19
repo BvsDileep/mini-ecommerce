@@ -1,0 +1,41 @@
+.rating-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.rate {
+    margin-left: 0.2rem;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    color: #010101;
+}
+
+.star {
+    position: relative;
+    display: inline-block;
+    color: #ccc;
+    /* base color for empty star */
+}
+
+.star.filled {
+    color: #ff9529;
+    /* full star color */
+}
+
+.star.half {
+    color: #ccc;
+}
+
+.star.half::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: #ff9529;
+    /* half-filled star color */
+}
